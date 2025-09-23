@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f26b3a"/>
+      <stop offset="1" stop-color="#f03a72"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5ec1a1"/>
+      <stop offset="1" stop-color="#7ee7c5"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0d0f12"/>
+  <g transform="translate(8,6)">
+    <ellipse cx="24" cy="26" rx="24" ry="26" fill="url(#skin)"/>
+    <ellipse cx="24" cy="26" rx="20" ry="22" fill="#f6f7f9" stroke="url(#accent)" stroke-width="2"/>
+    <g fill="#1e2328">
+      <circle cx="16" cy="20" r="1.2"/>
+      <circle cx="24" cy="19" r="1.2"/>
+      <circle cx="32" cy="21" r="1.2"/>
+      <circle cx="19" cy="27" r="1.2"/>
+      <circle cx="27" cy="28" r="1.2"/>
+      <circle cx="35" cy="27" r="1.2"/>
+      <circle cx="16" cy="33" r="1.2"/>
+      <circle cx="24" cy="34" r="1.2"/>
+      <circle cx="32" cy="33" r="1.2"/>
+    </g>
+  </g>
+</svg>

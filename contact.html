@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Pitaya Academy</title>
+  <meta name="description" content="Contact Pitaya Academy about LEGO teams and the College Prep program."/>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/img/logo-mark-pro.svg" alt="Pitaya Academy" />
+        <span>Pitaya Academy</span>
+      </a>
+      <button class="btn" data-nav-toggle aria-expanded="false" aria-controls="nav-list">Menu</button>
+      <ul id="nav-list" data-nav-list>
+  <li><a href="lego.html">LEGO Coaching</a></li>
+  <li><a href="college-prep.html">College Prep Program</a></li>
+  <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section class="section">
+      <h1>Contact</h1>
+      <p class="muted">Tell us about your student and goals. We’ll reply with availability and next steps.</p>
+    </section>
+
+    <section class="section" id="inquiry">
+      <form id="contact-form" name="contact" method="POST" action="https://formspree.io/f/xldprzjj" novalidate>
+  <p class="visually-hidden" aria-hidden="true"><label>Don’t fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+        <div class="row">
+          <div>
+            <label for="name">Your name</label>
+            <input id="name" name="name" autocomplete="name" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" autocomplete="email" required />
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="interest">I'm interested in</label>
+            <select id="interest" name="interest">
+              <option>FLL Explore Team</option>
+              <option>FLL Challenge Team</option>
+              <option>College Prep Program</option>
+              <option>General question</option>
+            </select>
+          </div>
+          <div>
+            <label for="student">Student grade/age</label>
+            <input id="student" name="student" />
+          </div>
+        </div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Share goals, prior experience, and timing."></textarea>
+        <div style="margin-top:1rem; display:flex; gap:.5rem; align-items:center">
+          <button class="btn primary" type="submit" id="submit-btn">Send</button>
+          <span id="form-status" class="muted" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+    </section>
+
+    <section class="section" id="apply">
+      <div class="card">
+        <h2>Apply to College Prep</h2>
+        <p>We’ll schedule a short intro call to discuss interests and project ideas. Limited spots per term.</p>
+        <a class="btn" href="#inquiry">Use the contact form</a>
+      </div>
+    </section>
+
+    <section class="section" id="email-us">
+      <div class="card">
+        <h2>Email us directly</h2>
+        <p class="muted">Prefer email? Send us a message and we’ll reply within 1–2 business days.</p>
+        <a class="btn" href="mailto:pitayaacademy25@gmail.com?subject=Inquiry%20from%20Pitaya%20Academy%20site&body=Hi%20Pitaya%20Academy%2C%0D%0A%0D%0AMy%20name%20is%3A%20%0D%0AStudent%20grade%2Fage%3A%20%0D%0AInterested%20in%3A%20FLL%20Explore%20%7C%20FLL%20Challenge%20%7C%20College%20Prep%20Program%0D%0A%0D%0AMessage%3A%0D%0A">Email pitayaacademy25@gmail.com</a>
+        <p class="small muted">Tip: If the button doesn’t open your email app, copy the address: <code>pitayaacademy25@gmail.com</code></p>
+      </div>
+    </section>
+
+    <section class="section" id="google-form" aria-labelledby="gform-title">
+      <div class="card">
+        <h2 id="gform-title">Prefer Google Forms?</h2>
+        <p class="muted">You can also submit via Google Forms. Replace the placeholder `FORM_ID` below with your real form ID (see README).</p>
+        <div class="embed-form">
+          <iframe title="Pitaya Academy Inquiry"
+                  src="https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true"
+                  width="640" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <p class="small">
+          Can’t see the form? <a href="https://docs.google.com/forms/d/e/FORM_ID/viewform" target="_blank" rel="noopener">Open it in a new tab</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-col">
+      <span>&copy; <span data-year></span> Pitaya Academy</span>
+    </div>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+  <script>
+  // Progressive enhancement: async submit to Formspree with friendly UX
+  (function(){
+    const form = document.getElementById('contact-form');
+    if(!form) return;
+    const statusEl = document.getElementById('form-status');
+    const submitBtn = document.getElementById('submit-btn');
+    form.addEventListener('submit', async (e) => {
+      if (!window.fetch) return; // fallback to normal POST if fetch unsupported
+      e.preventDefault();
+      // Honeypot check
+      if (form.querySelector('input[name="bot-field"]').value) {
+        statusEl.textContent = 'Thanks!';
+        return; // silently ignore bots
+      }
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+      statusEl.textContent = '';
+      try {
+        const data = new FormData(form);
+        const res = await fetch(form.action, {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: data
+        });
+        if (res.ok) {
+          form.reset();
+          submitBtn.textContent = 'Sent';
+          statusEl.textContent = 'Thanks — we will reach out shortly.';
+        } else {
+          const out = await res.json().catch(()=>({errors:[]}));
+          submitBtn.textContent = 'Send';
+          submitBtn.disabled = false;
+          statusEl.textContent = (out.errors && out.errors[0] && out.errors[0].message) || 'Something went wrong. Please try again.';
+        }
+      } catch (err){
+        submitBtn.textContent = 'Send';
+        submitBtn.disabled = false;
+        statusEl.textContent = 'Network error. Please try again.';
+      }
+    });
+  })();
+  </script>
+</body>
+</html>

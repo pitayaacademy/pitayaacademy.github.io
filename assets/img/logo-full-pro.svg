@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 120" role="img" aria-label="Pitaya Academy">
+  <defs>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f26b3a"/>
+      <stop offset="1" stop-color="#ea2f56"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5ec1a1"/>
+      <stop offset="1" stop-color="#2ec59c"/>
+    </linearGradient>
+  </defs>
+  <rect width="620" height="120" rx="16" fill="#0d0f12"/>
+  <g transform="translate(20,16)">
+    <g>
+      <rect width="88" height="88" rx="16" fill="#0d0f12" stroke="url(#accent)"/>
+      <ellipse cx="44" cy="44" rx="33" ry="36" fill="url(#skin)"/>
+      <ellipse cx="44" cy="44" rx="28" ry="31" fill="#f6f7f9" stroke="url(#accent)" stroke-width="2"/>
+      <g fill="#1e2328" opacity="0.92">
+        <circle cx="32" cy="34" r="1.4"/>
+        <circle cx="42" cy="33" r="1.4"/>
+        <circle cx="52" cy="35" r="1.4"/>
+        <circle cx="36" cy="44" r="1.4"/>
+        <circle cx="46" cy="46" r="1.4"/>
+        <circle cx="56" cy="44" r="1.4"/>
+        <circle cx="32" cy="54" r="1.4"/>
+        <circle cx="42" cy="56" r="1.4"/>
+        <circle cx="52" cy="54" r="1.4"/>
+      </g>
+      <g transform="translate(32,20)">
+        <rect x="0" y="0" width="24" height="12" rx="2.8" fill="rgba(0,0,0,0.06)"/>
+        <circle cx="6" cy="6" r="1.6" fill="#cfd7df"/>
+        <circle cx="12" cy="6" r="1.6" fill="#cfd7df"/>
+        <circle cx="18" cy="6" r="1.6" fill="#cfd7df"/>
+      </g>
+    </g>
+    <g transform="translate(120,20)" fill="#e6edf3">
+      <path d="M0 72V0h28c14 0 23 8 23 18s-9 18-23 18H14v36H0zm14-60v22h12c8 0 11-5 11-11s-3-11-11-11H14z"/>
+      <path d="M64 72V0h14v72H64z"/>
+      <path d="M86 72V0h14l22 32V0h14v72h-14L100 31v41H86z"/>
+      <path d="M152 72V0h40v14h-26v9h24v14h-24v9h26v14h-40z"/>
+      <path d="M196 72V0h40v14h-26v44h26v14h-40z"/>
+      <path d="M240 72V0h17l14 21L285 0h17v72h-14V32l-14 18-14-18v40h-14z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Update this to your published site URL
+Sitemap: https://<username>.github.io/<repo>/sitemap.xml

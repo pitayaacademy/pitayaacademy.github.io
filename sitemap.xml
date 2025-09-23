@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Replace base with your live site URL -->
   <url>
-    <loc>https://<username>.github.io/<repo>/</loc>
+    <loc>https://pitayaacademy.github.io/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://<username>.github.io/<repo>/lego.html</loc>
+    <loc>https://pitayaacademy.github.io/lego.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://<username>.github.io/<repo>/college-prep.html</loc>
+    <loc>https://pitayaacademy.github.io/college-prep.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://<username>.github.io/<repo>/contact.html</loc>
+    <loc>https://pitayaacademy.github.io/contact.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://<username>.github.io/<repo>/404.html</loc>
+    <loc>https://pitayaacademy.github.io/404.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
   </url>

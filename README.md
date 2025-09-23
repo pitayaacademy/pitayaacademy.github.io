@@ -24,7 +24,7 @@ Start-Process .\index.html
 3. In the GitHub repo, open Settings → Pages.
    - Source: `Deploy from a branch`
    - Branch: `main` (root) → Save
-4. Wait 1–2 minutes. Your site will be at `https://<username>.github.io/<repo>/`.
+4. Wait 1–2 minutes. Your site will be at `https://pitayaacademy.github.io/`.
 
 ### Push with PowerShell
 ```powershell
@@ -57,6 +57,7 @@ Add `class="active"` to the current page link in the header nav to highlight.
    - Replace the `action` URL in `contact.html` with your Formspree endpoint (e.g., `https://formspree.io/f/abcde123`).
    - If you prefer Netlify, restore `data-netlify` attributes and deploy on Netlify.
  - Crawling: update the placeholders in `robots.txt` and `sitemap.xml` with your live site URL (e.g., `https://<username>.github.io/<repo>/` or your custom domain).
+   - Already set to `https://pitayaacademy.github.io/` in this repo.
  - Branding: replace `assets/img/logo-mark.svg` (icon) and `assets/img/logo-full.svg` (optional wordmark) with your own.
     - Adjust theme colors in `assets/css/styles.css` under the `:root` variables `--brand` and `--accent`.
 

@@ -63,13 +63,7 @@ Add `class="active"` to the current page link in the header nav to highlight.
 ## Brand kit (quick)
 - Receiving inquiry emails (Formspree)
 
-### Using Google Forms instead
-If you prefer Google Forms (Google relays responses and can notify you by email):
-1. Create a Google Form (require email, add your questions).
-2. Click Send → Embed <> and copy the embed HTML. Extract the `FORM_ID` part from the `docs.google.com/forms/d/e/FORM_ID/` URL.
-3. In `contact.html`, replace `FORM_ID` in the Google Forms section (iframe and the fallback link).
-4. In Google Forms → Responses → ••• → Get email notifications for new responses.
-5. Optionally connect the form to a Google Sheet for tracking.
+<!-- Google Forms option removed; using on-site form (Formspree) and mailto link instead. -->
 
 ### Direct email option
 The contact page also includes a direct `mailto:` link to `pitayaacademy25@gmail.com` with a prefilled subject and body.

@@ -81,5 +81,3 @@ form .row{display:grid; grid-template-columns:1fr 1fr; gap:1rem}
 .badge{display:inline-block; padding:.15rem .5rem; border-radius:999px; border:1px solid var(--border); background:rgba(255,255,255,.04); font-size:.8rem}
 ul.clean{list-style:none; padding-left:0}
 .sep{height:1px; background:var(--border); margin:1.25rem 0}
-.embed-form{position:relative; width:100%; max-width:100%; overflow:hidden}
-.embed-form iframe{display:block; width:100%; min-height:70vh; border:1px solid var(--border); border-radius:.5rem; background:#0b0f14}

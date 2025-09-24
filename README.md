@@ -4,7 +4,7 @@ A lightweight, responsive static website for a coaching and mentoring practice. 
 
 ## Pages
 - `index.html` — Home
-- `lego.html` — LEGO Coaching (FLL Explore & FLL Challenge)
+- `lego.html` — LEGO Robotics (FLL Explore & FLL Challenge)
 - `college-prep.html` — College Prep Program
 - `contact.html` — Contact & Inquiry
 - `404.html` — Fallback for GitHub Pages

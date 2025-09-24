@@ -1,7 +1,7 @@
 - [x] Verify that the copilot-instructions.md file in the .github directory is created.
 
 - [x] Clarify Project Requirements
-	This is a static website hosted on GitHub Pages with no build tools. Pages: Home, LEGO Coaching (FLL Explore & FLL Challenge), College Prep Program (portfolio-building with AI skills, with life-science/health data context implied), Contact, 404. Single CSS and small JS. Lightweight, responsive, and SEO-friendly.
+	This is a static website hosted on GitHub Pages with no build tools. Pages: Home, LEGO Robotics (FLL Explore & FLL Challenge), College Prep Program (portfolio-building with AI skills, with life-science/health data context implied), Contact, 404. Single CSS and small JS. Lightweight, responsive, and SEO-friendly.
 
 - [x] Scaffold the Project
 	Project files and folders created in current workspace.
